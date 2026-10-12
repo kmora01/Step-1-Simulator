@@ -1,0 +1,85 @@
+{
+  "checkedOn": "2026-10-11",
+  "sources": [
+    {
+      "number": 1,
+      "description": "USMLE. Step 1: formato y duración. https://www.usmle.org/step-exams/step-1",
+      "url": "https://www.usmle.org/step-exams/step-1"
+    },
+    {
+      "number": 2,
+      "description": "USMLE. Test Delivery Software Updates for Step 2 CK and Step 1 Coming in May 2026. https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026",
+      "url": "https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026"
+    },
+    {
+      "number": 3,
+      "description": "USMLE. Step 1 Content Outline and Specifications. https://www.usmle.org/exam-resources/step-1-materials/step-1-content-outline-and-specifications",
+      "url": "https://www.usmle.org/exam-resources/step-1-materials/step-1-content-outline-and-specifications"
+    },
+    {
+      "number": 4,
+      "description": "USMLE. Enhancements to Nutrition Content on USMLE Step Exams Coming in June 2026. Actualizado 10 de junio de 2026. https://www.usmle.org/enhancements-nutrition-content-usmle-step-exams-coming-june-2026",
+      "url": "https://www.usmle.org/enhancements-nutrition-content-usmle-step-exams-coming-june-2026"
+    },
+    {
+      "number": 5,
+      "description": "NBME. Item-Writing Guide. 6.ª ed. https://www.nbme.org/sites/default/files/2021-02/NBME_Item%20Writing%20Guide_R_6.pdf",
+      "url": "https://www.nbme.org/sites/default/files/2021-02/NBME_Item%20Writing%20Guide_R_6.pdf"
+    },
+    {
+      "number": 6,
+      "description": "Larsen DP, Butler AC, Roediger HL III. Repeated testing improves long-term retention relative to repeated study: a randomised controlled trial. Med Educ. 2009;43(12):1174–1181. doi:10.1111/j.1365-2923.2009.03518.x. https://pubmed.ncbi.nlm.nih.gov/19930508/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19930508/"
+    },
+    {
+      "number": 7,
+      "description": "GitHub. What is GitHub Pages? https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+    },
+    {
+      "number": 8,
+      "description": "MDN. SubtleCrypto. https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto"
+    },
+    {
+      "number": 9,
+      "description": "GitHub. GitHub Pages limits. https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+    },
+    {
+      "number": 10,
+      "description": "NBME. Comprehensive Basic Science Self-Assessment. https://www.nbme.org/examinees/self-assessments/comprehensive-basic-science-self-assessment/",
+      "url": "https://www.nbme.org/examinees/self-assessments/comprehensive-basic-science-self-assessment/"
+    },
+    {
+      "number": 11,
+      "description": "Le T, Bhushan V, et al. First Aid for the USMLE Step 1 2026. Archivo aportado por el usuario; ISBN 978-1-264-77578-1. Referencia científica y material visual del simulador.",
+      "url": null
+    },
+    {
+      "number": 12,
+      "description": "GOLD. Pocket Guide 2025: LAMA y terapia triple; apoyo a la corrección de errata en PDF 728 del libro.",
+      "url": "https://goldcopd.org/wp-content/uploads/2024/11/Pocket-Guide-2025-v1.0-12Nov2024_WMV-Draft.pdf"
+    }
+  ],
+  "sourceBook": {
+    "title": "First Aid for the USMLE Step 1 2026",
+    "isbn": "978-1-264-77578-1",
+    "pdfPages": 869,
+    "source": "Archivo proporcionado por el usuario"
+  },
+  "officialFormat": {
+    "effectiveFrom": "2026-05-14",
+    "blocks": 14,
+    "maximumQuestionsPerBlock": 20,
+    "minutesPerBlock": 30,
+    "totalMinutes": 480,
+    "tutorialMinutes": 5,
+    "initialBreakMinutes": 55
+  },
+  "designNotes": [
+    "Cuotas por sistemas situadas dentro de intervalos oficiales; diseño propio.",
+    "280 versiones recombinan 2.800 preguntas. Las formas 1–10 son disjuntas.",
+    "Banco educativo original sin calibración psicométrica oficial."
+  ]
+}
