@@ -98,3 +98,4 @@ Si deseas revisar o editar el banco, también se entrega una copia JSON separada
 Conserva el mismo nombre y ruta del repositorio: el almacenamiento del navegador está asociado al origen del sitio. Antes de reemplazar código o contenido, exporta un respaldo. Mantén `credentials.json` de esta entrega si quieres conservar las mismas contraseñas y las claves del historial. No combines arbitrariamente contenido cifrado de una entrega con credenciales de otra.
 
 La app y el banco de preguntas son originales; USMLE, NBME, UWorld y First Aid son referencias o marcas de sus respectivos titulares. El simulador no está afiliado a esas organizaciones. Las páginas del libro corresponden al archivo proporcionado por el usuario para este proyecto.
+Simulador Step 1 
