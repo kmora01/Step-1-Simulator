@@ -114,8 +114,14 @@
       contentKey = await crypto.subtle.importKey('raw', rawContentKey, { name: 'AES-GCM' }, false, ['decrypt']);
       const data = await loadData('./data/questions.bin'); const errors = C.validateBank(data.questions); if (errors.length) throw new Error(`El banco necesita revisión: ${errors.slice(0, 3).join(' ')}`);
       bank = data; byId = new Map(bank.questions.map(q => [q.id, q])); getForm = C.formGenerator(bank.questions);
-      const stored = await dbRead(selected.username), loaded = stored ? await decryptRecord(stored, pkey) : C.newProfile(selected.username);
-      C.validateProfile(loaded, selected.username, byId); user = selected; profileKey = pkey; profile = loaded; authEpoch++; statsFirst = profile.preferences.firstStats !== false;
+      let progressKey = pkey;
+      if (selected.wrappedProgressKey) {
+        const wrapped = selected.wrappedProgressKey;
+        const rawProgressKey = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unbase64(wrapped.iv) }, pkey, unbase64(wrapped.data));
+        progressKey = await crypto.subtle.importKey('raw', rawProgressKey, { name: 'AES-GCM' }, false, ['encrypt', 'decrypt']);
+      }
+      const stored = await dbRead(selected.username), loaded = stored ? await decryptRecord(stored, progressKey) : C.newProfile(selected.username);
+      C.validateProfile(loaded, selected.username, byId); user = selected; profileKey = progressKey; profile = loaded; authEpoch++; statsFirst = profile.preferences.firstStats !== false;
       document.getElementById('password').value = ''; reconcileSession(); await persistProgress();
       route = profile.activeSession ? 'session' : 'home'; location.hash = route; render(); startClock();
       if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});

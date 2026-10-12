@@ -1,6 +1,6 @@
 /* Only encrypted content is cached. Profile history stays encrypted in IndexedDB. */
 'use strict';
-const SHELL = 'stepone-shell-v1';
+const SHELL = 'stepone-shell-v2';
 const CONTENT = 'stepone-content-v1';
 const BASE = new URL('./', self.location.href);
 const shellFiles = ['index.html', 'app.js', 'core.js', 'styles.css', 'icon.svg', 'manifest.webmanifest', 'credentials.json'];
